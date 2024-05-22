@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><span id="bank-name"><strong>My Bank</strong></span></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <h1>Welcome to my Bank</h1>
+        <p>A trusted financial partner.</p>
+    </main>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="dashboard" style="display: none;">
+        <h2>Dashboard</h2>
+        <p>Welcome, <span id="user"></span>!</p>
+        <p>Your account balance is: <span id="balance">$10,000</span></p>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
