@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         homeSection.style.display = "none";
         dashboard.style.display = "block";
     });
-
+    // tets
     // Basic navigation (optional)
     const links = document.querySelectorAll("nav ul li a");
     links.forEach(link => {
